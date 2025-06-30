@@ -3,7 +3,7 @@ import { AppContext } from "./App_Context";
 import axios from "axios";
 
 const App_State = (props) => {
-  const url = "https://yumifyrecipeapp-backend.onrender.com";
+  const url = import.meta.env.VITE_API_URL;
   const [token, setToken] = useState("");
   const [recipe, setrecipe] = useState([]);
   const [savedRecipe, setsavedRecipe] = useState([]);
